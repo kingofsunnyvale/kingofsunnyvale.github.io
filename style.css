@@ -1,0 +1,46 @@
+body{
+    background-color: #FEEAE6;
+}
+
+h1 {
+    color: #442C2E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    font-size: 96px;
+}
+
+div {
+    margin-top: 40px;
+}
+
+div h1 {
+    background-color: #FEDBD0;
+}
+
+div div {
+    min-width: 25%;
+    border-top: 2px solid #442C2E;
+    text-decoration: line-through;
+
+}
+
+#contact {
+  border: 2.5px solid #442C2E;
+  background-color: #FEEAE6;
+  color: #442C2E;
+  padding: 10px 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.social {
+  border: none;
+  background-color: #FEEAE6;
+  color: #442C2E;
+  padding: 10px 15px;
+  height: 20px
+  width: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
