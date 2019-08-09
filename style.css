@@ -28,8 +28,8 @@ div div {
   border: 2.5px solid #442C2E;
   background-color: #FEEAE6;
   color: #442C2E;
-  padding: 10px 30px;
-  font-size: 25px;
+  font-size: 75px;
+  padding: 30px 90px;
   cursor: pointer;
 }
 
@@ -44,3 +44,11 @@ div div {
   cursor: pointer;
 }
 
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #contact {
+      padding: 10px 30px;
+      font-size: 25px;
+  }
+}
