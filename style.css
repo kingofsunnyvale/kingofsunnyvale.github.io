@@ -6,15 +6,17 @@ h1 {
     color: #442C2E;
     font-family: 'Rubik', sans-serif;
     font-weight: lighter;
-    font-size: 96px;
+    font-size: 60px;
+    background-color: #FEDBD0;
+
 }
 
 div {
     margin-top: 40px;
 }
 
-div h1 {
-    background-color: #FEDBD0;
+h1 + h1 {
+    font-size: 35px;
 }
 
 div div {
@@ -28,8 +30,8 @@ div div {
   border: 2.5px solid #442C2E;
   background-color: #FEEAE6;
   color: #442C2E;
-  font-size: 75px;
-  padding: 30px 90px;
+  padding: 10px 30px;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -44,11 +46,24 @@ div div {
   cursor: pointer;
 }
 
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 830px) {
   /* For desktop: */
-  #contact {
-      padding: 10px 30px;
-      font-size: 25px;
+  span {
+    display: visible;
+  }
+
+  h1 {
+    font-size: 96px;
+  }
+
+  h1 + h1 {
+    font-size: 96px;
   }
 }
+
+@media only screen and (max-width: 830px) {
+  span {
+    display: none;
+  } 
+}
+
