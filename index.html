@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<title>COVID-19 In Perspective</title>
+	<link rel="stylesheet" type="text/css" href="css\theme.css">
+	<link rel="stylesheet" type="text/css" href="css\core.css">
+	<link rel="stylesheet" type="text/css" href="css\normalize.css">
+	<link rel="stylesheet" type="text/css" href="css\skeleton.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="assets/index.js"></script>
+	<script type="text/javascript" src="js/theme.js"></script>
 
-    <meta name="keywords" content="Web Development, Full Stack, Freelance, Freelancer, web, design, web design" >
-    <meta name="description" content="I'm a web-dev freelancer living in the Bay Area." >
-
-    <title>Avneesh</title>
 </head>
 
 <body>
-<div class="d-flex flex-column align-items-center">
-        <h1>Avneesh <span>Muralitharan</span> </h1>
-        <h1>『Full Stack Dev』</h1>
+	<!-- id="highlighted" for the current page... add it as an id to the li -->
 
-        <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeZ-3g6g66ftyx71SYESTyPQK29gYD0vpsux2Y8-Ddka5ZmeA/viewform" id="contact"class="mt-5 mb-4">Contact Me</a>
-
-     <div class="d-flex justify-content-around mt-5">
-        <a href = "https://www.linkedin.com/in/avneesh-muralitharan-85845a165/" class="social"class="mt-5 mb-4"><i class="fab fa-linkedin-in"></i></a>
-        <a href = "https://github.com/amuralitharan" class="social"class="mt-5 mb-4"><i class="fab fa-github"></i></a>
-        <a href = "https://www.facebook.com/avneesh.muralitharan" class="social"class="mt-5 mb-4"><i class="fab fa-facebook-f"></i></a>
-    </div>
-</div>
+	<div class="section about">
+		<div class="container">
+			<h3>COVID-19 In Perspective</h3>
+			<p>COVID-19 has killed <span id="deaths">undefined</span> Americans. It's hard to put a number like that in perspective. </p>
+			<p>A <a class="link" href="https://www.healthaffairs.org/do/10.1377/hblog20200804.515241/full/">National Universal Mask Mandate</a> has the potential to save lives, but still has not been implemented.</p>
+			<p>Below is an hourglass that represents the number of COVID-19 deaths. Above is the amount of people yet to die, and below is the amount of people who have already passed away. If a universal mask mandate is implemented, the hourglass will never drain completely.</p>
+		</div>
+	</div>
+	<div class="outer">
+		<div class="hourglass" id="locate"></div>
+	</div>
 </body>
+
 </html>
