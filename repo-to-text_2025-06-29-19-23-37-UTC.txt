@@ -1,0 +1,155 @@
+Directory: amuralitharan.github.io
+
+Directory Structure:
+```
+.
+.
+├── ./.git
+│   ├── ./.git/COMMIT_EDITMSG
+│   ├── ./.git/config
+│   ├── ./.git/description
+│   ├── ./.git/HEAD
+│   ├── ./.git/hooks
+│   │   ├── ./.git/hooks/applypatch-msg.sample
+│   │   ├── ./.git/hooks/commit-msg.sample
+│   │   ├── ./.git/hooks/fsmonitor-watchman.sample
+│   │   ├── ./.git/hooks/post-update.sample
+│   │   ├── ./.git/hooks/pre-applypatch.sample
+│   │   ├── ./.git/hooks/pre-commit.sample
+│   │   ├── ./.git/hooks/pre-merge-commit.sample
+│   │   ├── ./.git/hooks/pre-push.sample
+│   │   ├── ./.git/hooks/pre-rebase.sample
+│   │   ├── ./.git/hooks/pre-receive.sample
+│   │   ├── ./.git/hooks/prepare-commit-msg.sample
+│   │   ├── ./.git/hooks/push-to-checkout.sample
+│   │   └── ./.git/hooks/update.sample
+│   ├── ./.git/index
+│   ├── ./.git/info
+│   │   └── ./.git/info/exclude
+│   ├── ./.git/logs
+│   │   ├── ./.git/logs/HEAD
+│   │   └── ./.git/logs/refs
+│   │       ├── ./.git/logs/refs/heads
+│   │       │   └── ./.git/logs/refs/heads/master
+│   │       └── ./.git/logs/refs/remotes
+│   │           └── ./.git/logs/refs/remotes/origin
+│   │               ├── ./.git/logs/refs/remotes/origin/HEAD
+│   │               └── ./.git/logs/refs/remotes/origin/master
+│   ├── ./.git/objects
+│   │   ├── ./.git/objects/00
+│   │   │   └── ./.git/objects/00/c30422ee851b1a0b2a805600f17bdd9de80376
+│   │   ├── ./.git/objects/23
+│   │   │   └── ./.git/objects/23/0f0b847164b7880e8ae48bd35b227d5d1708f3
+│   │   ├── ./.git/objects/2f
+│   │   │   └── ./.git/objects/2f/66401348eb3c7fe9fe2e9d991c3e8211f1b340
+│   │   ├── ./.git/objects/41
+│   │   │   └── ./.git/objects/41/b7a265e09d9f253d7dfc94007f402c6c3f8140
+│   │   ├── ./.git/objects/43
+│   │   │   └── ./.git/objects/43/6455c1e8d65adc81e36386dd8ead3ccb471a6a
+│   │   ├── ./.git/objects/59
+│   │   │   └── ./.git/objects/59/f4b109935c2c4ce696d98ce6926d3c01287e68
+│   │   ├── ./.git/objects/5f
+│   │   │   └── ./.git/objects/5f/841c65603f5ae50f4f0aa9ef6548a6764c9175
+│   │   ├── ./.git/objects/80
+│   │   │   └── ./.git/objects/80/5bc28fcaaf94c2e2d25dd7adc5c1518ad5cd3f
+│   │   ├── ./.git/objects/81
+│   │   │   ├── ./.git/objects/81/09e3ecef30ed43ad21a8a520bf6e5817f88ce1
+│   │   │   └── ./.git/objects/81/c07dc99932f99e733b1672a23680f6c1ac6e3a
+│   │   ├── ./.git/objects/8e
+│   │   │   └── ./.git/objects/8e/3a68a8b32a754e2e4a6a849e5ce3b1871e7eff
+│   │   ├── ./.git/objects/a8
+│   │   │   └── ./.git/objects/a8/2bfec27963880087aaa5e61fcc2f55038a57e0
+│   │   ├── ./.git/objects/b6
+│   │   │   └── ./.git/objects/b6/920192dd120c8a3db425c833ad6c64fb113c6d
+│   │   ├── ./.git/objects/f4
+│   │   │   └── ./.git/objects/f4/162c771730ec508a0e9d4a2d1c17b78fdf8a70
+│   │   ├── ./.git/objects/f7
+│   │   │   └── ./.git/objects/f7/fe3b50f10eea94c13e9b3b05b10d086446cde1
+│   │   ├── ./.git/objects/fc
+│   │   │   └── ./.git/objects/fc/76605ca56ecbe90d8e5851879b63d428c1919c
+│   │   ├── ./.git/objects/info
+│   │   └── ./.git/objects/pack
+│   │       ├── ./.git/objects/pack/pack-7c687398b893cc5a318974dabe74bb0a534586e3.idx
+│   │       └── ./.git/objects/pack/pack-7c687398b893cc5a318974dabe74bb0a534586e3.pack
+│   ├── ./.git/packed-refs
+│   └── ./.git/refs
+│       ├── ./.git/refs/heads
+│       │   └── ./.git/refs/heads/master
+│       ├── ./.git/refs/remotes
+│       │   └── ./.git/refs/remotes/origin
+│       │       ├── ./.git/refs/remotes/origin/HEAD
+│       │       └── ./.git/refs/remotes/origin/master
+│       └── ./.git/refs/tags
+├── ./index.html
+└── ./style.css
+
+```
+
+Contents of index.html:
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+    <title>Avneesh Muralitheran</title>
+  </head>
+
+  <body class="jetbrains-mono-400-normal">
+    <main class="mx-auto max-w-prose lg:max-w-xl px-6 lg:px-0 pt-24 pb-32 leading-relaxed tracking-wide text-lg">
+      <nav aria-label="Primary links" class="flex flex-wrap gap-2 text-base font-mono tracking-normal mt-6 mb-6">
+        <a href="" class="underline hover:text-blue-600">home</a><span>/</span>
+        <a href="" class="underline hover:text-blue-600">blog</a><span>/</span>
+        <a href="" class="underline hover:text-blue-600">contact</a>
+      </nav>
+
+      <p> 
+        Hello, I'm Avneesh.
+      </p>
+
+      <p>
+        I'm a MSCS student at UC San Diego. I also work at Syneris, building document retreival for biotech companies.
+      </p>
+
+      <p>
+        In the past, I got my B.S in Computer Science from UC Santa Cruz, and have interned at Alveo and Dell.
+      </p>
+    </main>
+  </body>
+</html>
+```
+
+Contents of style.css:
+```
+main p {
+  margin-bottom: 1.25rem;
+}
+
+.noto-sans-tamil-400-normal {
+    font-family: "Noto Sans Tamil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+.jetbrains-mono-400-normal {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+```
+
