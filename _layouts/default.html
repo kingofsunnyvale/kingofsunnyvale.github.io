@@ -20,11 +20,11 @@
       <nav aria-label="Primary links"
            class="flex flex-wrap gap-2 text-base font-mono tracking-normal mt-6 mb-6">
         <a href="{{ '/' | relative_url }}"
-           class="underline hover:text-blue-600{% if page.url == '/' %} font-semibold{% endif %}">home</a><span>/</span>
+           class="underline hover:text-blue-600{% if page.url == '/' %} text-blue-600{% endif %}">home</a><span>/</span>
         <a href="{{ '/blog' | relative_url }}"
            class="underline hover:text-blue-600{% if page.url contains '/blog' %} text-blue-600{% endif %}">blog</a><span>/</span>
         <a href="{{ '/contact.html' | relative_url }}"
-           class="underline hover:text-blue-600{% if page.url == '/contact.html' %} font-semibold{% endif %}">contact</a>
+           class="underline hover:text-blue-600{% if page.url == '/contact.html' %} text-blue-600{% endif %}">contact</a>
       </nav>
 
       {{ content }}
