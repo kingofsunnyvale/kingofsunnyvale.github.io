@@ -1,0 +1,21 @@
+main p {
+  margin-bottom: 1.25rem;
+}
+
+
+.noto-sans-tamil-400-normal {
+    font-family: "Noto Sans Tamil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+.jetbrains-mono-400-normal {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
