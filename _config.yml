@@ -1,0 +1,7 @@
+title: Avneesh Muralitharan
+description: Personal site & blog
+url: "https://kingofsunnyvale.com"   # ← CNAME
+baseurl: ""                          # site served from repo root
+markdown: kramdown
+permalink: /blog/:title/             # pretty post URLs
+timezone: America/Los_Angeles        # adjust if needed 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  </head>
+  <body class="jetbrains-mono-400-normal">
+    <main class="mx-auto max-w-prose lg:max-w-xl px-6 lg:px-0 pt-24 pb-32 leading-relaxed tracking-wide text-lg">
+
+      <!-- shared nav -->
+      <nav aria-label="Primary links"
+           class="flex flex-wrap gap-2 text-base font-mono tracking-normal mt-6 mb-6">
+        <a href="{{ '/' | relative_url }}"
+           class="underline hover:text-blue-600{% if page.url == '/' %} font-semibold{% endif %}">home</a><span>/</span>
+        <a href="{{ '/blog.html' | relative_url }}"
+           class="underline hover:text-blue-600{% if page.url contains '/blog' %} font-semibold{% endif %}">blog</a><span>/</span>
+        <a href="{{ '/contact.html' | relative_url }}"
+           class="underline hover:text-blue-600{% if page.url == '/contact.html' %} font-semibold{% endif %}">contact</a>
+      </nav>
+
+      {{ content }}
+    </main>
+  </body>
+</html> 
