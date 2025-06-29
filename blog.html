@@ -14,10 +14,6 @@ permalink: /blog/
       <span class="text-gray-500 text-sm">
         — {{ post.date | date: "%B %-d, %Y" }}
       </span>
-
-      {% if post.excerpt != "" %}
-        <p class="mt-1">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
