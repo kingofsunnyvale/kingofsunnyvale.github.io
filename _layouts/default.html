@@ -22,7 +22,7 @@
         <a href="{{ '/' | relative_url }}"
            class="underline hover:text-blue-600{% if page.url == '/' %} font-semibold{% endif %}">home</a><span>/</span>
         <a href="{{ '/blog' | relative_url }}"
-           class="underline hover:text-blue-600{% if page.url contains '/blog' %} font-semibold{% endif %}">blog</a><span>/</span>
+           class="underline hover:text-blue-600{% if page.url contains '/blog' %} text-blue-600{% endif %}">blog</a><span>/</span>
         <a href="{{ '/contact.html' | relative_url }}"
            class="underline hover:text-blue-600{% if page.url == '/contact.html' %} font-semibold{% endif %}">contact</a>
       </nav>
