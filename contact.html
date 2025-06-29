@@ -1,38 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
-    <title>Avneesh Muralitharan</title>
-  </head>
-  <body class="jetbrains-mono-400-normal">
-    <main class="mx-auto max-w-prose lg:max-w-xl px-6 lg:px-0 pt-24 pb-32 leading-relaxed tracking-wide text-lg">
-        <nav aria-label="Primary links"
-        class="flex flex-wrap gap-2 text-base font-mono tracking-normal mt-6 mb-6">
-     <a href="{{ '/' | relative_url }}"
-        class="underline hover:text-blue-600{% if page.url == '/' %} text-blue-600{% endif %}">home</a><span>/</span>
-     <a href="{{ '/blog' | relative_url }}"
-        class="underline hover:text-blue-600{% if page.url contains '/blog' %} text-blue-600{% endif %}">blog</a><span>/</span>
-     <a href="{{ '/contact.html' | relative_url }}"
-        class="underline hover:text-blue-600{% if page.url == '/contact.html' %} text-blue-600{% endif %}">contact</a>
-   </nav>
+---
+layout: default
+title: Contact
+---
 
-      <p>
-        Want to hire me? Check out my <a href="CV.pdf" class="underline hover:text-blue-600">CV</a>. 
-        Connect with me on <a href="https://www.linkedin.com/in/avneesh-muralitharan-85845a165/" class="underline hover:text-blue-600">LinkedIn</a>,
-        see my code on <a href="https://github.com/kingofsunnyvale" class="underline hover:text-blue-600">GitHub</a>,
-        review my problem-solving skills on <a href="https://leetcode.com/u/kingofsunnyvale/" class="underline hover:text-blue-600">Leetcode</a>,
-        or reach out via <a href="mailto:avneesh.muralitharan+website@gmail.com" class="underline hover:text-blue-600">email</a>.
-      </p>
+<p>
+  Want to hire me? Check out my
+  <a href="CV.pdf" class="underline hover:text-blue-600">CV</a>. Connect with me
+  on <a href="https://www.linkedin.com/in/avneesh-muralitharan-85845a165/" class="underline hover:text-blue-600">LinkedIn</a>,
+  see my code on
+  <a href="https://github.com/kingofsunnyvale" class="underline hover:text-blue-600">GitHub</a>,
+  review my problem‑solving skills on
+  <a href="https://leetcode.com/u/kingofsunnyvale/" class="underline hover:text-blue-600">LeetCode</a>,
+  or reach out via
+  <a href="mailto:avneesh.muralitharan+website@gmail.com" class="underline hover:text-blue-600">email</a>.
+</p>
 
-      <p>Otherwise, please reach out via fireworks over <a href="https://share.google/Nk8CCkWUqYsLwoNQE" class="underline hover:text-blue-600">Sunnyvale, CA</a>. </p>
-    </main>
-  </body>
-</html>
+<p>
+  Otherwise, please reach out via fireworks over
+  <a href="https://share.google/Nk8CCkWUqYsLwoNQE" class="underline hover:text-blue-600">Sunnyvale, CA</a>.
+</p>
