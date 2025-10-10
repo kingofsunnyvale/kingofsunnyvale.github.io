@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Tracked Bluesky Posts Through Embedding Space and Found Something Weird"
-date: 2025-10-9 12:00:00 -0700
+date: 2025-10-09 12:00:00 -0700
 ---
 
 I scraped a bunch of Bluesky posts and embedded them to see how online conversations move through semantic space over time. The idea: if we can track how discourse evolves, maybe we can predict where it's heading.
