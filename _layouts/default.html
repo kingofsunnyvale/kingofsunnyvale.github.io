@@ -57,14 +57,6 @@
           });
         });
 
-        // entry reveal: staggered clip-path wipe per character
-        links.forEach((link, elIdx) => {
-          gsap.fromTo(link.querySelectorAll('.ch-top'),
-            { clipPath: 'inset(100% 0 0 0)' },
-            { clipPath: 'inset(0 0 0 0)', duration: 0.7, ease: 'power3.out',
-              stagger: 0.03, delay: elIdx * 0.08 });
-        });
-
         // hover: both layers roll up with a per-character delay
         const EASE = 'expo.inOut'; // ~ cubic-bezier(0.87, 0, 0.13, 1)
         links.forEach(link => {

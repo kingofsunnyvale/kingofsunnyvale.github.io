@@ -5,6 +5,18 @@ main p {
 /* nav character-roll animation */
 .chr-hover {
   display: inline-flex;
+  position: relative;
+}
+
+/* one continuous underline on the link, instead of per-character */
+.chr-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.32em;
+  height: 1px;
+  background: currentColor;
 }
 
 .ch-wrap {
@@ -16,8 +28,6 @@ main p {
 .ch-top,
 .ch-bot {
   display: block;
-  line-height: 1.2;
-  text-decoration: underline;
 }
 
 .ch-bot {
