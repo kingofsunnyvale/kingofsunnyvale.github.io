@@ -2,10 +2,16 @@ main p {
   margin-bottom: 1.25rem;
 }
 
+/* underline fallback when the animation doesn't run (no JS / reduced motion) */
+nav[aria-label="Primary links"] a:not(.chr-hover) {
+  text-decoration: underline;
+}
+
 /* nav character-roll animation */
 .chr-hover {
   display: inline-flex;
   position: relative;
+  text-decoration: none;
 }
 
 /* one continuous underline on the link, instead of per-character */
