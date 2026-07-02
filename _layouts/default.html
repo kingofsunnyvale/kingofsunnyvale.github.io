@@ -31,5 +31,51 @@
 
       {{ content }}
     </main>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        // split each nav link into per-character top/bottom layers for the roll effect
+        const links = document.querySelectorAll('nav[aria-label="Primary links"] a');
+        links.forEach(link => {
+          const text = link.textContent.trim();
+          link.textContent = '';
+          link.classList.add('chr-hover');
+          [...text].forEach(ch => {
+            const wrap = document.createElement('span');
+            wrap.className = 'ch-wrap';
+            const top = document.createElement('span');
+            top.className = 'ch-top';
+            top.textContent = ch;
+            const bot = document.createElement('span');
+            bot.className = 'ch-bot';
+            bot.textContent = ch;
+            wrap.append(top, bot);
+            link.appendChild(wrap);
+          });
+        });
+
+        // entry reveal: staggered clip-path wipe per character
+        links.forEach((link, elIdx) => {
+          gsap.fromTo(link.querySelectorAll('.ch-top'),
+            { clipPath: 'inset(100% 0 0 0)' },
+            { clipPath: 'inset(0 0 0 0)', duration: 0.7, ease: 'power3.out',
+              stagger: 0.03, delay: elIdx * 0.08 });
+        });
+
+        // hover: both layers roll up with a per-character delay
+        const EASE = 'expo.inOut'; // ~ cubic-bezier(0.87, 0, 0.13, 1)
+        links.forEach(link => {
+          const wraps = link.querySelectorAll('.ch-wrap');
+          const roll = to => wraps.forEach((w, i) =>
+            gsap.to(w.children, { yPercent: to, duration: 0.6, ease: EASE,
+              delay: i * 0.028, overwrite: true }));
+          link.addEventListener('mouseenter', () => roll(-100));
+          link.addEventListener('mouseleave', () => roll(0));
+        });
+      });
+    </script>
   </body>
 </html> 

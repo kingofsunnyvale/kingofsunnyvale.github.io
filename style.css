@@ -2,6 +2,30 @@ main p {
   margin-bottom: 1.25rem;
 }
 
+/* nav character-roll animation */
+.chr-hover {
+  display: inline-flex;
+}
+
+.ch-wrap {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ch-top,
+.ch-bot {
+  display: block;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.ch-bot {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
 .noto-sans-tamil-400-normal {
     font-family: "Noto Sans Tamil", sans-serif;
     font-optical-sizing: auto;
